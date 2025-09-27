@@ -1,3 +1,69 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
+.contenedor-boletos {
+  background-color: v.$verde;
+
+  h3 {
+    color: v.$blanco;
+  }
+}
+
+.boletos {
+  @include m.contenedor;
+  @include m.tablet {
+    @include m.grid(2, 5rem);
+  }
+}
+.pase {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    scale: 1.05;
+  }
+  .pase-nombre {
+    text-align: center;
+    color: v.$blanco;
+    font-weight: 900;
+    font-size: 3rem;
+  }
+  .pase-header {
+    background-color: v.$rosa;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.1rem;
+    p {
+      //   font-size: 1.7rem;
+      color: v.$blanco;
+    }
+  }
+  .pase-body {
+    background-color: v.$blanco;
+    ul {
+      @include m.resetLista;
+      li {
+        padding: 2rem;
+        font-size: 1.4rem;
+        border-bottom: 1px solid #e1e1e1;
+      }
+    }
+  }
+
+  .pase-footer {
+    background-color: v.$blanco;
+    padding: 1rem;
+    display: flex;
+    p {
+      margin: 0;
+      display: inline-block;
+      color: v.$blanco;
+      background-color: v.$morado;
+      font-weight: 900;
+      width: 95%;
+      text-align: center;
+      margin: 0 auto;
+      border-radius: 5px;
+      padding: 1rem;
+    }
+  }
+}
