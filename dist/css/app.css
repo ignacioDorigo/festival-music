@@ -673,3 +673,12 @@ body > section {
   border-radius: 5px;
   padding: 1rem;
 }
+
+.footer {
+  background-color: #f53756;
+  padding: 1rem;
+}
+.footer p {
+  text-align: center;
+  color: #ffffff;
+}
