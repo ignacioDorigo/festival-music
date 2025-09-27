@@ -1,3 +1,57 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
+.sobre-festival {
+  @include m.contenedor;
+
+//   @include m.tablet {
+
+//   }
+
+  @include m.desktop {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .imagen {
+    flex-basis: 50%;
+  }
+
+  .contenido-festival {
+    flex-basis: 50%;
+    h2 {
+      margin: 2rem 0rem 0rem 0rem;
+      text-align: center;
+      @include m.desktop {
+        text-align: start;
+        margin: 0;
+      }
+    }
+    .fecha {
+      color: v.$verde;
+      font-weight: bold;
+      font-size: 1.5rem;
+      @include m.tablet {
+        font-size: 2rem;
+      }
+    }
+    .contenido-festival__detalle {
+      text-align: justify;
+      font-size: 1.6rem;
+      @include m.tablet {
+        font-size: 1.9rem;
+      }
+    }
+  }
+}
+
+.detalle-festival {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  svg {
+    stroke: v.$verde;
+  }
+}

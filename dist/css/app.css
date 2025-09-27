@@ -477,3 +477,60 @@ body > section {
 .contenido-video p {
   margin: 0;
 }
+
+.sobre-festival {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .sobre-festival {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.sobre-festival .imagen {
+  flex-basis: 50%;
+}
+.sobre-festival .contenido-festival {
+  flex-basis: 50%;
+}
+.sobre-festival .contenido-festival h2 {
+  margin: 2rem 0rem 0rem 0rem;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .sobre-festival .contenido-festival h2 {
+    text-align: start;
+    margin: 0;
+  }
+}
+.sobre-festival .contenido-festival .fecha {
+  color: #4cb8b3;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .sobre-festival .contenido-festival .fecha {
+    font-size: 2rem;
+  }
+}
+.sobre-festival .contenido-festival .contenido-festival__detalle {
+  text-align: justify;
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .sobre-festival .contenido-festival .contenido-festival__detalle {
+    font-size: 1.9rem;
+  }
+}
+
+.detalle-festival {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.detalle-festival svg {
+  stroke: #4cb8b3;
+}
