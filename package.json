@@ -1,0 +1,28 @@
+{
+  "name": "festival-music",
+  "version": "1.0.0",
+  "description": "Proyecto de Festival Musica, usando HTML, CSS, SASS, JS, Node, Gulp",
+  "keywords": [
+    "Musica",
+    "Techno",
+    "HTML",
+    "CSS",
+    "SASS",
+    "JS",
+    "Node",
+    "Gulp"
+  ],
+  "license": "ISC",
+  "author": "Ignacio Dorigo",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:dist/css",
+    "dev": "gulp dev"
+  },
+  "dependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.93.0"
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival de Musica</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="dist/css/app.css">
+    <link rel="stylesheet" href="dist/css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <a href="index.html">
+                <h1>Techno & EDM Festival</h1>
+            </a>
+
+            <nav class="navegacion-principal">
+                <a href="#">LineUp</a>
+                <a href="#">Galeria</a>
+                <a href="#">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Techno & EDM Festival</h2>
+                <p>Mayo 2026, Buenos Aires, Argentina</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <!-- Varios formatos admitidos -->
+            <!-- En caso de no aceptar un formato, se carga el siguiente y asi sucesivamente -->
+            <source src="video/dj.mp4" type="video/mp4">
+            <source src="video/dj.webm" type="video/webm">
+            <source src="video/dj.ogv" type="video/ogv">
+        </video>
+
+    </div>
+
+    <section>
+        <div class="imagen">
+            <img src="src/img/imagen_dj.jpg" alt="Imagen de DJ en el Festival EDM">
+        </div>
+        <div class="contenido-festival">
+            <h2>Techno & EDM Festival</h2>
+            <p class="fecha">Mayo 2026, Buenos Aires, Argentina</p>
+            <p>
+                Viví una experiencia única con los mejores DJs internacionales y nacionales en un evento que combina
+                música, luces y tecnología. Durante dos días, Buenos Aires se convertirá en la capital del Techno y el
+                EDM,
+                con escenarios de última generación, performances visuales impactantes y un ambiente pensado para
+                disfrutar
+                con amigos. ¡No te pierdas esta oportunidad de bailar hasta el amanecer!
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
