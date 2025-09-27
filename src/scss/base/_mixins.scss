@@ -41,3 +41,9 @@
   grid-template-columns: repeat($columnas, 1fr);
   gap: $gap;
 }
+
+@mixin resetLista{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

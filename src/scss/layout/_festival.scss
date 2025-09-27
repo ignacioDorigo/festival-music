@@ -4,10 +4,6 @@
 .sobre-festival {
   @include m.contenedor;
 
-//   @include m.tablet {
-
-//   }
-
   @include m.desktop {
     display: flex;
     gap: 2rem;
